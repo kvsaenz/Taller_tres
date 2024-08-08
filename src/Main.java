@@ -24,23 +24,24 @@ public class Main {
         if (valorA == valorB || valorB == valorC || valorA == valorC) {
             System.out.println("Los valores deben ser diferentes");
 
-        } else if (valorA > valorB && valorA > valorC) {
-            System.out.println("este valor es mayor " + valorA);
-        } else if (valorB > valorA && valorB > valorC) {
-            System.out.println("este valor es mayor " + valorB);
         } else {
-            System.out.println("este valor es mayor " + valorC);
+
+            if (valorA > valorB && valorA > valorC) {
+                System.out.println("este valor es mayor " + valorA);
+            } else if (valorB > valorA && valorB > valorC) {
+                System.out.println("este valor es mayor " + valorB);
+            } else {
+                System.out.println("este valor es mayor " + valorC);
+            }
+
+            if (valorA < valorB && valorA < valorC) {
+                System.out.println("este valor es menor " + valorA);
+            } else if (valorB < valorA && valorB < valorC) {
+                System.out.println("este valor es menor " + valorB);
+            } else {
+                System.out.println("este valor es menor " + valorC);
+            }
         }
-
-
-        if (valorA < valorB && valorA < valorC) {
-            System.out.println("este valor es menor " + valorA);
-        } else if (valorB < valorA && valorB < valorC) {
-            System.out.println("este valor es menor " + valorB);
-        } else {
-            System.out.println("este valor es menor " + valorC);
-        }
-
     }
 
 }
